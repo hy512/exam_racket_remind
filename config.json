@@ -1,0 +1,29 @@
+{
+    "http": {
+        "port": 18000,
+        "host": "0.0.0.0"
+    },
+    "data_source": {
+        "type": "sqlite",
+        "schema": [
+        ],
+        "sqlite": {
+            "filename": "data.db"
+        }
+    },
+    "cache": {
+        "type": "memcached",
+        "memcached": {
+            "ip": "192.168.34.193",
+            "port": 11211
+        },
+        "config": {
+            "expiration": 300
+        },
+        "names": {
+            "session": {
+                "expiration": 1200
+            }
+        }
+    }
+}
